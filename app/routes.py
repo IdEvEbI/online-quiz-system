@@ -16,7 +16,8 @@ def upload():
         mysql.connection.commit()
         cursor.close()
 
-        return f"题目已保存：{question}"
+        # 渲染成功页面
+        return render_template('upload_success.html', message=f"题目已保存：{question}")
     return render_template('upload.html')
 
 @app.route('/questions')

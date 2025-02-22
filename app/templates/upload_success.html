@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>上传成功</title>
+
+  <!-- 引入 Bootstrap 样式 -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+
+<body>
+  <div class="container mt-4">
+    <h1 class="h3">上传成功</h1>
+    <p class="text-break fs-5">{{ message }}</p>
+    <div class="d-flex flex-column flex-md-row gap-2">
+      <a href="/upload" class="btn btn-primary">继续上传</a>
+      <a href="/" class="btn btn-secondary">返回首页</a>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -15,7 +15,7 @@
     <h1>题目列表</h1>
     <ul class="list-group mt-3">
       {% for question in questions %}
-      <li class="list-group-item">{{ question[0] }} (创建时间: {{ question[1] }})</li>
+      <li class="list-group-item">{{ question[0] }} <small class="text-muted">(创建时间: {{ question[1] }})</small></li>
       {% endfor %}
     </ul>
     <a href="/" class="btn btn-secondary mt-3">返回首页</a>

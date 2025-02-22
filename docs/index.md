@@ -7,3 +7,4 @@
 3. [连接 MySQL 数据库](mysql-integration.md)
 4. [实现学生随机练习功能](random-practice.md)
 5. [优化用户界面](ui-optimization.md)
+6. [实现响应式布局](responsive-layout.md)
