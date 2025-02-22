@@ -5,15 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>随机练习</title>
+
+  <!-- 引入 Bootstrap 样式 -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 </head>
 
 <body>
-  <h1>随机练习</h1>
-
-  <!-- 显示随机题目 -->
-  <p>{{ question }}</p>
-
-  <a href="/">返回首页</a>
+  <div class="container mt-4">
+    <h1>随机练习</h1>
+    <div class="card mt-3">
+      <div class="card-body">
+        <p class="card-text">{{ question }}</p>
+      </div>
+    </div>
+    <a href="/" class="btn btn-secondary mt-3">返回首页</a>
+  </div>
 </body>
 
 </html>

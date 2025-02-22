@@ -5,19 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>题目列表</title>
+
+  <!-- 引入 Bootstrap 样式 -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
 </head>
 
 <body>
-  <h1>题目列表</h1>
-
-  <!-- 显示题目列表 -->
-  <ul>
-    {% for question in questions %}
-    <li>{{ question[0] }} (创建时间: {{ question[1] }})</li>
-    {% endfor %}
-  </ul>
-
-  <a href="/">返回首页</a>
+  <div class="container mt-4">
+    <h1>题目列表</h1>
+    <ul class="list-group mt-3">
+      {% for question in questions %}
+      <li class="list-group-item">{{ question[0] }} (创建时间: {{ question[1] }})</li>
+      {% endfor %}
+    </ul>
+    <a href="/" class="btn btn-secondary mt-3">返回首页</a>
+  </div>
 </body>
 
 </html>
