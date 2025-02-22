@@ -9,7 +9,7 @@
 
 ## 二、开发日志
 
-### 2.1：初始化 GitHub 仓库
+### 2.1 初始化 GitHub 仓库
 
 1. 登录 **GitHub**，创建仓库 `online-quiz-system`。
 2. 添加 `.gitignore`（见下方示例）。
@@ -56,7 +56,7 @@
 
    > 提示：若未安装 `git-flow`，运行 `brew install git-flow`。
 
-### 2.2：安装 MySQL
+### 2.2 安装 MySQL
 
 1. 启动 **Docker Desktop**（若未安装，从 [官网](https://www.docker.com/products/docker-desktop/) 下载）。
 2. 拉取并运行 **MySQL**：
@@ -81,7 +81,7 @@
 
    > 提示：若无 MySQL 客户端，运行 `brew install mysql`。
 
-### 2.3：配置 Python 虚拟环境
+### 2.3 配置 Python 虚拟环境
 
 #### 2.3.1 关于虚拟环境
 
