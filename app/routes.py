@@ -28,3 +28,16 @@ def list_questions():
     cursor.close()
 
     return render_template('questions.html', questions=questions)
+
+@app.route('/practice')
+def practice():
+    # 随机抽取一条题目
+    cursor = mysql.connection.cursor()
+    cursor.execute("SELECT content FROM questions ORDER BY RAND() LIMIT 1")
+    question = cursor.fetchone()
+    cursor.close()
+
+    # 检查是否有题目
+    if question:
+        return render_template('practice.html', question=question[0])
+    return "暂无题目可练习"
