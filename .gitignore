@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.venv/
+venv/
+env/
+*.log
+
+# Docker
+*.dockerignore
+
+# Node.js (Vue)
+node_modules/
+dist/
+
+# macOS
+.DS_Store
+
+# MySQL
+mysql-data/
