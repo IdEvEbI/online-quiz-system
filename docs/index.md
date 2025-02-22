@@ -4,3 +4,4 @@
 
 1. [项目初始化与本地环境准备](./setup.md)
 2. [搭建 Flask 基础应用](flask-base.md)
+3. [连接 MySQL 数据库](mysql-integration.md)
